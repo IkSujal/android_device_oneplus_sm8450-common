@@ -63,6 +63,9 @@ on property:vendor.post_boot.parsed=1
     write /proc/irq/243/smp_affinity_list 2
     write /proc/irq/240/smp_affinity_list 1
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 service vendor.audioadsprpcd_audiopd /vendor/bin/audioadsprpcd audiopd
    override
    class main
