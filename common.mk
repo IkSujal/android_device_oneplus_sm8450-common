@@ -399,3 +399,4 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8450-common/sm8450-common-vendor.mk)
+$(call soong_config_set,gpu_oplus,driver_q3,false)
